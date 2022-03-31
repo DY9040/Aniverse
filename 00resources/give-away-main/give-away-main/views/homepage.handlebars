@@ -1,0 +1,58 @@
+{{#if loggedIn}}
+
+<center>
+  <h2>User GiveAways!</h2>
+  </center>
+<div class="card-container">
+
+  {{#each items as |item|}}
+
+{{> item-list item}}
+
+{{/each}}
+</div>
+{{else}}
+<center>
+<div  class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+    <h1>Join The GiveAway </h1>
+    <p>This website allows us all to come together and Give back to everyone you can give away anything you want!</p>
+     <a href="/signup"><button type="button" class="carouselBtn">Get Started</button></a>
+  </div>
+      <img src="/img/carImg1.jpg" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+    <h1>Join The GiveAway </h1>
+    <p>This website allows us all to come together and Give back to everyone you can give away anything you want!</p>
+   <a href="/signup"><button type="button" class="carouselBtn">Get Started</button></a>
+  </div>
+      <img src="/img/carImg2.jpg" class="d-block" alt="...">
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+    <h1>Join The GiveAway </h1>
+    <p>This website allows us all to come together and Give back to everyone you can give away anything you want!</p>
+   <a href="/signup"><button type="button" class="carouselBtn">Get Started</button></a>
+  </div>
+      <img src="/img/carImg3.jpg" class="d-block" alt="...">
+    </div>
+  </div>
+</div>
+
+</center>
+
+<center>
+  <h2>User GiveAways!</h2>
+  </center>
+<div class="card-container">
+
+  {{#each items as |item|}}
+
+{{> item-list item}}
+
+{{/each}}
+</div>
+{{/if}}
