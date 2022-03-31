@@ -35,6 +35,10 @@ User.init(
         isEmail: true
       }
     },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,

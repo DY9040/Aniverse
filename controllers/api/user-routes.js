@@ -32,12 +32,6 @@ router.get('/:id', (req, res) => {
           model: Post,
           attributes: ['title']
         }
-      },
-      {
-        model: Post,
-        attributes: ['title'],
-        through: Vote,
-        as: 'voted_posts'
       }
     ]
   })
@@ -60,7 +54,8 @@ router.post('/', (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
-    persona: req.body.persona
+    persona: req.body.persona,
+    filename: req.body.filename
   })
   .then(dbUserData => {
     req.session.save(() => {
