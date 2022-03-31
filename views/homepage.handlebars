@@ -4,6 +4,8 @@
     <article class="post">
       <div class="title">
         <h3>{{title}}</h3>
+        <h1>header 1 testing filename {{user.filename}}</h1>
+        <img src="images/{{user.filename}}" alt="{{user.username}} profile image">
       </div>
       <div class="meta">
         by {{user.username}} on
@@ -19,12 +21,13 @@
 <ol class="user-list">
   {{#each users as |user|}}
   <li>
-    <article class="post">
+    <article class="user">
       <div class="title">
-        <h3>{{username}}</h3>
+        <h3>{{user.username}}</h3>
+        <img src="public/images/{{filename}}"
       </div>
       <div class="meta">
-        by {{user.username}} on
+        {{user.username}} on the Aniverse since:
         {{created_at}}
         |
         <a href="/post/{{id}}">{{comments.length}} comment(s)</a>

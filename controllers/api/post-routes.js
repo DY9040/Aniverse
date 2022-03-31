@@ -14,12 +14,12 @@ router.get('/', (req, res) => {
         order: [['id', 'ASC',]],//doesnt work?
         include: {
           model: User,
-          attributes: ['username']
+          attributes: ['username','persona','filename']
         }
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username','persona','filename']
       }
     ]
   })
@@ -43,12 +43,12 @@ router.get('/:id', (req, res) => {
         order: [['id', 'ASC',]],//doesnt work?
         include: {
           model: User,
-          attributes: ['username']
+          attributes: ['username','persona','filename']
         }
       },
       {
         model: User,
-        attributes: ['username']
+        attributes: ['username','persona','filename']
       }
     ]
   })
@@ -81,39 +81,39 @@ router.post('/', (req, res) => {
 
 // PUT /api/posts/upvote
 //{"user_id":"1","post_id":"1"}
-router.put('/upvote', (req, res) => {
-  // custom static method created in models/Post.js
-  Post.upvote(req.body, { Vote })
-    .then(updatedPostData => res.json(updatedPostData))
-    .catch(err => {
-      console.log(err);
-      res.status(400).json(err);
-    });
-});
+// router.put('/upvote', (req, res) => {
+//   // custom static method created in models/Post.js
+//   Post.upvote(req.body, { Vote })
+//     .then(updatedPostData => res.json(updatedPostData))
+//     .catch(err => {
+//       console.log(err);
+//       res.status(400).json(err);
+//     });
+// });
 
-router.put('/:id', (req, res) => {
-  Post.update(
-    {
-      title: req.body.title
-    },
-    {
-      where: {
-        id: req.params.id
-      }
-    }
-  )
-    .then(dbPostData => {
-      if (!dbPostData) {
-        res.status(404).json({ message: 'No post found with this id' });
-        return;
-      }
-      res.json(dbPostData);
-    })
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+// router.put('/:id', (req, res) => {
+//   Post.update(
+//     {
+//       title: req.body.title
+//     },
+//     {
+//       where: {
+//         id: req.params.id
+//       }
+//     }
+//   )
+//     .then(dbPostData => {
+//       if (!dbPostData) {
+//         res.status(404).json({ message: 'No post found with this id' });
+//         return;
+//       }
+//       res.json(dbPostData);
+//     })
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
 
 

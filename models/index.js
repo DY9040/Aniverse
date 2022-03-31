@@ -15,21 +15,11 @@ Post.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-// User.belongsToMany(Post, {
-//   through: Vote,
-//   as: 'voted_posts',
-//   foreignKey: 'user_id'
-// });
-
-
-// commenting this out removes the double post_id error plague
-// User.belongsToMany(Post, {
-//   through: Comment,
-//   as: 'commented_posts',
-//   foreignKey: 'post_id'
-// });
-
-
+User.belongsToMany(Post, {
+  through: Comment,
+  as: 'commented_posts',
+  foreignKey: 'user_id'
+});
 
 Comment.belongsTo(User, {
   foreignKey: 'user_id'
