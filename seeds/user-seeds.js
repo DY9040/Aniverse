@@ -7,7 +7,7 @@ const userdata = [
     email: 'nwestnedge0@cbc.ca',
     password: 'password123',
     persona: 'shoto',
-    filename: 'shoto.png'
+    filename: 'deku.png'
   },
   {
     username: 'jwilloughway1',

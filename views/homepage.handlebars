@@ -4,8 +4,7 @@
     <article class="post">
       <div class="title">
         <h3>{{title}}</h3>
-        <h1>header 1 testing filename {{user.filename}}</h1>
-        <img src="images/{{user.filename}}" alt="{{user.username}} profile image">
+        
       </div>
       <div class="meta">
         by {{user.username}} on
@@ -13,6 +12,7 @@
         |
         <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
       </div>
+      <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
     </article>
   </li>
   {{/each}}
