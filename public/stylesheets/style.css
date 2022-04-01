@@ -6,8 +6,11 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family:fantasy;
     color: #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   a {
@@ -15,14 +18,27 @@
     color: #000000;
     font-weight: bold;
     transition: color .1s;
+    font-size: 2.75rem;
+    text-shadow:0.2rem 0.2rem 0.4rem dimgray;
   }
   
   a:hover {
-    color: #eb3434;
+    color: #5c5a5a;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav a {
+    padding: 0.55rem 0.55rem 0.55rem 0.55rem;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #000000;
     border: 0;
     padding: 1%;
     color: white;
@@ -30,10 +46,20 @@
     transition: background-color .1s;
     cursor: pointer;
     border-radius: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #eb3434;
+  }
+
+  .form-body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: -18rem;
   }
   
   .post-list {
@@ -75,7 +101,8 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    background-image: linear-gradient(black, red, rgb(221, 64, 64));
+    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,11 +197,13 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
-    font-size: 110%;
+    font-size: 150%;
+    background-image: linear-gradient(rgb(221, 64, 64), red, black);
+    text-shadow: 0.1rem 0.1rem 0.2rem dimgray;
   }
 
   .post-profile-img {

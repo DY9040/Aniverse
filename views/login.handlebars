@@ -1,46 +1,48 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+<div class="form-body"> 
+  <form class="login-form">
+    <div>
+      <label for="email-login">Email:</label>
+      <input type="text" id="email-login" />
+    </div>
+    <div>
+      <label for="password-login">Password:</label>
+      <input type="password" id="password-login" />
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+  </form>
 
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="persona-signup">enter your persona:</label> 
-    {{!-- <input type="text" id="persona-signup" /> --}}
-    <select type="text" id="persona-signup">
-      <option value="allmight">Allmight</option>
-      <option value="goku">Goku</option>
-      <option value="sailer moon">Sailer Moon</option>
-      <option value="one punch">One Punch</option>
-      <option value="deku">Deku</option>
-    </select> 
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
+  <form class="signup-form">
+    <div>
+      <label for="username-signup">Username:</label>
+      <input type="text" id="username-signup" />
+    </div>
+    <div>
+      <label for="email-signup">Email:</label>
+      <input type="text" id="email-signup" />
+    </div>
+    <div>
+      <label for="persona-signup">Enter Your Persona:</label> 
+      {{!-- <input type="text" id="persona-signup" /> --}}
+      <select type="text" id="persona-signup">
+        <option value="allmight">Allmight</option>
+        <option value="goku">Goku</option>
+        <option value="sailer moon">Sailer Moon</option>
+        <option value="one punch">One Punch</option>
+        <option value="deku">Deku</option>
+      </select> 
+    </div>
+    <div>
+      <label for="password-signup">Password:</label>
+      <input type="password" id="password-signup" />
+    </div>
 
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
+    <div>
+      <button type="submit">Signup</button>
+    </div>
+  </form>
+</div>
 
 <script src="/javascript/login.js"></script>
