@@ -14,8 +14,8 @@ async function signupFormHandler(event) {
     else if(persona==="one punch"){
       filename="one_punch.png"
     }
-    else if(persona==="sailer moon"){
-      filename="sailer_moon.png"
+    else if(persona==="sailor moon"){
+      filename="sailor_moon.png"
     }
     else if(persona==="goku"){
       filename="goku.png"
