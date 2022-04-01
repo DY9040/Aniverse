@@ -20,7 +20,7 @@
     font-weight: bold;
     transition: color .1s;
     font-size: 2.75rem;
-    text-shadow:0.2rem 0.2rem 0.4rem dimgray;
+    text-shadow:0.2rem 0.2rem 0.4rem rgb(160, 158, 158);
   }
   
   a:hover {
@@ -41,7 +41,7 @@
   button {
     background-color: #000000;
     border: 3;
-    border-color: red;
+    border-color: rgb(75, 11, 11);
     padding: 1%;
     color: white;
     font-weight: bold;
@@ -52,7 +52,7 @@
   }
   
   button:hover {
-    background-color: #eb3434;
+    background-color: rgb(155, 26, 26);
   }
 
   .form-body {
@@ -104,7 +104,7 @@
   }
   
   header {
-    background-image: linear-gradient(black, red, rgb(221, 64, 64));
+    background-image: linear-gradient(rgb(75, 11, 11), rgb(94, 4, 4), rgb(155, 26, 26));
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
@@ -204,13 +204,14 @@
   }
   
   footer {
+    color: black;
     border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 150%;
-    background-image: linear-gradient(rgb(221, 64, 64), red, black);
-    text-shadow: 0.1rem 0.1rem 0.2rem dimgray;
+    background-image: linear-gradient(rgb(155, 26, 26), rgb(94, 4, 4), rgb(75, 11, 11));
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(160, 158, 158);
   }
 
   .post-profile-img {
