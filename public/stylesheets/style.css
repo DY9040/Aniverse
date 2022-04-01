@@ -7,7 +7,7 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family:fantasy;
+    font-family: fantasy;
     color: #333;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,8 +19,8 @@
     color: #000000;
     font-weight: bold;
     transition: color .1s;
-    font-size: 2.75rem;
-    text-shadow:0.2rem 0.2rem 0.4rem rgb(160, 158, 158);
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgb(160, 158, 158);
   }
   
   a:hover {
@@ -41,7 +41,7 @@
   button {
     background-color: #000000;
     border: 3;
-    border-color: rgb(75, 11, 11);
+    border-color: rgb(155, 26, 26);
     padding: 1%;
     color: white;
     font-weight: bold;
@@ -61,7 +61,14 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    bottom: -16rem;
+    bottom: -14rem;
+  }
+
+  .login-form, .signup-form {
+    text-shadow: 0rem 0rem 0.1rem rgb(250, 249, 249);
+    color:  black;
+    font-weight: bolder;
+    font-size: 1.15rem;
   }
   
   .post-list {
