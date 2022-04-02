@@ -10,14 +10,15 @@
   </div>
 </article> --}}
 
-<article class="post">
-  <div class="title">
-    <h3>{{title}}</h3>
-    {{!-- <span>({{post_url}})</span> --}}
-  </div>
-  <div class="meta">
-    by {{user.username}} on {{created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
-  </div>
-</article>
+    <article class="post">
+      <div class="title">
+        <h3>{{title}}</h3>
+        <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+      </div>
+      <div class="meta">
+        by {{user.username}} on
+        {{created_at}}
+        |
+        <a href="/post/{{id}}">{{comments.length}} comment(s)</a>
+      </div>
+    </article>
