@@ -1,4 +1,6 @@
 <section>
+  {{!-- how do we get profile image here? --}}
+  <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
   <h2>Create New Post</h2>
 
   <form class="new-post-form">
@@ -7,8 +9,8 @@
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
+      <label for="post-text">Rant</label>
+      <input type="text" name="post-text" />
     </div>
     <button type="submit" class="btn">Create</button>
   </form>
@@ -17,6 +19,7 @@
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
+  
   <ol>
     {{#each posts as |post|}}
     <li>
