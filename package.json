@@ -22,7 +22,7 @@
     "sequelize": "^6.17.0"
   },
   "devDependencies": {
-    "jest": "^25.1.0",
+    "jest": "^25.5.4",
     "tailwindcss": "^3.0.23"
   }
 }
