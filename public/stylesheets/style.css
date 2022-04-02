@@ -3,11 +3,15 @@
   }
   
   body, html {
+    background-image: url('../images/samurai_jack_scene_by_livingalivecreator_ddzz6vy-pre.jpeg');
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: fantasy;
     color: #333;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   a {
@@ -15,35 +19,67 @@
     color: #000000;
     font-weight: bold;
     transition: color .1s;
+    font-size: 3rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgb(160, 158, 158);
   }
   
   a:hover {
-    color: #eb3434;
+    color: #5c5a5a;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav a {
+    padding: 0.55rem 0.55rem 0.55rem 0.55rem;
   }
   
   button {
-    background-color: #225ca3;
-    border: 0;
+    background-color: #000000;
+    border: 3;
+    border-color: rgb(155, 26, 26);
     padding: 1%;
     color: white;
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-family: fantasy;
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: rgb(155, 26, 26);
+  }
+
+  .form-body {
+    font-family: fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: -14rem;
+  }
+
+  .login-form, .signup-form {
+    text-shadow: 0rem 0rem 0.1rem rgb(250, 249, 249);
+    color:  black;
+    font-weight: bolder;
+    font-size: 1.15rem;
   }
   
   .post-list {
+    background-image: url('public/images/landscape-nature-water-fantasy-city-wallpaper-preview.jpeg');
     margin: 0;
     padding: 0;
   }
   
   textarea, input {
     padding: .5%;
-    border-radius: 5px;
+    border-radius: 3px;
     border: 1px solid #ccc;
   }
   
@@ -75,7 +111,8 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    background-image: linear-gradient(rgb(75, 11, 11), rgb(94, 4, 4), rgb(155, 26, 26));
+    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,6 +197,10 @@
     margin-bottom: .5%;
     opacity: .6;
   }
+
+  .meta a {
+    font-size: 2rem;
+  }
   
   .new-post-form input {
     width: 300px;
@@ -170,11 +211,14 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    color: black;
+    border-top: 1px solid black;
     display: flex;
     justify-content: center;
     padding: 1%;
-    font-size: 110%;
+    font-size: 150%;
+    background-image: linear-gradient(rgb(155, 26, 26), rgb(94, 4, 4), rgb(75, 11, 11));
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(160, 158, 158);
   }
 
   .post-profile-img {
