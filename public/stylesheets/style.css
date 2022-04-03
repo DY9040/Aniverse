@@ -12,6 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
   
   a {
@@ -24,7 +25,7 @@
   }
   
   a:hover {
-    color: #5c5a5a;
+    color: rgb(160, 158, 158);
   }
 
   nav {
@@ -134,16 +135,17 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: black;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
     margin-left: 16px;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(160, 158, 158);
   }
   
   .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    color: rgb(160, 158, 158);
   }
   
   .delete-post-btn {
@@ -200,6 +202,12 @@
 
   .meta a {
     font-size: 2rem;
+  }
+
+  .your-posts, .new-post-form {
+    color: black;
+    font-size: larger;
+    text-shadow: 0.1rem 0.1rem 0.1rem 0.2rem rgb(155, 26, 26);
   }
   
   .new-post-form input {
