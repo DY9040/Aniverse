@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const withAuth = require('../../utils/auth');
 const { User, Post, Comment } = require('../../models');
+const nodemailer = require('nodemailer');
 
 // get all users
 router.get('/',withAuth, (req, res) => {
@@ -63,6 +64,7 @@ router.post('/', (req, res) => {
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
+      
   
       res.json(dbUserData);
     });
@@ -71,6 +73,28 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+    async function main () {
+      let transporter = nodemailer.createTransport({
+        host: "smtp.office365.com",
+        port: 587,
+        secure: false,
+        auth: {
+          user: "aniverse123@outlook.com",
+          pass:"Password123456"
+        },
+      });
+      
+      let info = await transporter.sendMail({
+        from: "aniverse123@outlook.com",
+        to:req.body.email ,
+        subject:"Congratulations you've created your Aniverse Account!",
+        text: "You're Account has been successfully created!"
+      });
+      console.log("Message Sent", info.messageId);
+    
+    }
+    
+    main().catch(console.error);
 });
 
 router.post('/login', (req, res) => {
