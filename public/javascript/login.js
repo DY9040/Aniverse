@@ -8,18 +8,18 @@ async function signupFormHandler(event) {
 
     console.log(persona)
    
-    if(persona==="allmight"){
+    if(persona==="Allmight"){
       filename="allmight.png"
     }
-    else if(persona==="one punch"){
+    else if(persona==="One Punch"){
       filename="one_punch.png"
     }
-    else if(persona==="sailor moon"){
+    else if(persona==="Sailor Moon"){
       filename="sailor_moon.png"
     }
-    else if(persona==="goku"){
+    else if(persona==="Goku"){
       filename="goku.png"
-    }else if(persona==="deku"){
+    }else if(persona==="Deku"){
       filename="deku.png"
     }else{
       filename="shoto.png"
