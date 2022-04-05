@@ -63,12 +63,34 @@ router.get('/', withAuth, (req, res) => {
 });
 
 router.get('/:id', withAuth, (req, res) => {
-    Post.findByPk(req.params.id, {
+    
+    let user;
+    console.log('======================');
+    User.findByPk(req.session.user_id,{
+      attributes: [
+        'username',
+        'email',
+        'password',
+        'persona',
+        'filename'
+      ]
+    }).then(dbUserData => {
+      user = dbUserData.dataValues;
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+    Post.findAll({
+      where: {
+        user_id: req.session.user_id
+      },
       attributes: [
         'id',
         'title',
         'created_at',
         'post_text'
+        
       ],
       include: [
         {
@@ -86,18 +108,12 @@ router.get('/:id', withAuth, (req, res) => {
       ]
     })
       .then(dbPostData => {
-        if (dbPostData) {
-          const post = dbPostData.get({ plain: true });
-          
-          res.render('user', {
-            post,
-            loggedIn: true
-          });
-        } else {
-          res.status(404).end();
-        }
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+  
+        res.render('user', { user, posts, loggedIn: true });
       })
       .catch(err => {
+        console.log(err);
         res.status(500).json(err);
       });
   });
