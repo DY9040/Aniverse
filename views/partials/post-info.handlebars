@@ -16,11 +16,12 @@
         <div class="image-wrapper">
           <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
       </div>
-      </div>
+      
       <div class="meta">
         by {{user.username}} on
         {{format_date created_at}}
         |
         <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
       </div>
     </article>

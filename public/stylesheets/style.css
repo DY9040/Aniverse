@@ -231,12 +231,16 @@
 
   .post-profile-img {
     width:100px;
+    display: flex;
   }
 
   .image-wrapper {
-    overflow:hidden;
+    overflow: hidden;
     border-radius: 50%;
     Width: 100px;
     height: 100px;
     vertical-align: middle;
+  }
+  .title {
+    border-bottom: 6px solid white;
   }
