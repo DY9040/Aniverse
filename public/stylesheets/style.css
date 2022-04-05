@@ -232,3 +232,11 @@
   .post-profile-img {
     width:100px;
   }
+
+  .image-wrapper {
+    overflow:hidden;
+    border-radius: 50%;
+    Width: 100px;
+    height: 100px;
+    vertical-align: middle;
+  }

@@ -1,6 +1,8 @@
 <section>
   {{!-- how do we get profile image here? --}}
-  <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+  <div class="image-wrapper">
+    <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+  </div>
   <h1>{{user.persona}}</h1>
   <h2>{{user.username}}'s Dashboard</h2>
   <h2>Create New Post</h2>
