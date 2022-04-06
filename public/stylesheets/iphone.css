@@ -1,0 +1,39 @@
+@media screen and (max-width: 480px) {
+  a {
+    font-size: medium;
+  }
+
+  button#logout {
+    font-size: initial;
+  }
+
+  body, html {
+    font-size: x-small;
+    width: 100vw;
+  }
+
+  main a {
+    font-size: x-small;
+  }
+
+  section#dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #profile {
+    width: 30%;
+  }
+
+  #new-post {
+    width: 60%;
+  }
+};
+
+
+
+/* @media only screen and (orientation: landscape) {
+  body {
+      background-color: orange;
+  }
+} */

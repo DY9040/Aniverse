@@ -1,23 +1,26 @@
-<section>
-  {{!-- how do we get profile image here? --}}
-  <div class="image-wrapper">
-    <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+<section id="dashboard">
+  <div id="profile">
+    <h2>{{user.username}}'s Dashboard</h2>
+    <div class="image-wrapper">
+      <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+    </div>
+    <h1>{{user.persona}}</h1>
   </div>
-  <h1>{{user.persona}}</h1>
-  <h2>{{user.username}}'s Dashboard</h2>
-  <h2>Create New Post</h2>
+  <div id="new-post">
+    <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-text">Rant</label>
-      <input type="text" name="post-text" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+    <form class="new-post-form">
+      <div>
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-text">Rant</label>
+        <input type="text" name="post-text" />
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
 </section>
 
 {{#if posts.length}}
