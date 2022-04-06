@@ -20,7 +20,7 @@
 
 ## Usage
 
-    ![screenshot](/public/images/screenshot.PNG "screenshot") Open up your code editor and make sure you are in the root directory. In your terminal type NPM i, this will install all of the software needed in the package.json file. Once installed type NPM start, this will run the server aniverse is on. Head over to your web browser and type in localhost:3001 from there sign up and log in. Once on the main page youll be able to make posts and comment on other users posts. 
+  ![screenshot](/public/images/screenshot.PNG "screenshot") Open up your code editor and make sure you are in the root directory. In your terminal type NPM i, this will install all of the software needed in the package.json file. Once installed type NPM start, this will run the server aniverse is on. Head over to your web browser and type in localhost:3001 from there sign up and log in. Once on the main page youll be able to make posts and comment on other users posts. 
 
 ## License
 
