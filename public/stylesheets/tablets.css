@@ -1,0 +1,29 @@
+@media screen 
+and (max-width: 768px),
+(orientation: landscape) {
+  a {
+    font-size: large;
+  }
+
+  /* body, html {
+    font-size: x-small;
+    width: 100vw;
+  }
+
+  main a {
+    font-size: x-small;
+  }
+
+  section#dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #profile {
+    width: 30%;
+  }
+
+  #new-post {
+    width: 60%;
+  } */
+}

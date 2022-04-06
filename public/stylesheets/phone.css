@@ -6,12 +6,11 @@ and (max-width: 480px),
   }
 
   button#logout {
-    font-size: initial;
+    font-size: larger;
   }
 
   body, html {
     font-size: x-small;
-    width: 100vw;
   }
 
   main a {
@@ -24,10 +23,16 @@ and (max-width: 480px),
   }
 
   #profile {
+    display: inline-block;
+    text-align: center;
     width: 30%;
   }
 
   #new-post {
     width: 60%;
+  }
+
+  h3 {
+    font-weight: normal;
   }
 }

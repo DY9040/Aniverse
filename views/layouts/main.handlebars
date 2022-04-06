@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniverse</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="stylesheet" href="/stylesheets/iphone.css">
+  <link rel="stylesheet" href="/stylesheets/phone.css">
+  <link rel="stylesheet" href="/stylesheets/tablet.css">
+  {{!-- <link rel="stylesheet" href="/stylesheets/laptop.css">
+  <link rel="stylesheet" href="/stylesheets/desktop.css">
+  <link rel="stylesheet" href="/stylesheets/tv.css"> --}}
 </head>
 
 <body>
@@ -15,14 +19,14 @@
     <h1>
       <a href="/">Aniverse</a>
     </h1>
-<nav>
-  {{#if loggedIn}}
-  <a href="/dashboard">Profile Page</a>
-  <button id="logout" class="btn-no-style">logout</button>
-  {{else}}
-  <a href="/login">login</a>
-  {{/if}}
-</nav>
+  <nav>
+    {{#if loggedIn}}
+    <a href="/dashboard">Profile Page</a>
+    <button id="logout" class="btn-no-style">logout</button>
+    {{else}}
+    <a href="/login">login</a>
+    {{/if}}
+  </nav>
   </header>
     <main>
       {{{ body }}}
