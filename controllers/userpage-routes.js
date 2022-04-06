@@ -8,9 +8,13 @@ const withAuth = require('../utils/auth');
 router.get('/:id', withAuth, (req, res) => {
   console.log("get from userpage-routes.js worked");
   let user;
+  console.log("req.body:", req.body)
   console.log('req.params:',req.params);
   //this is finding user by post id. 
-  User.findByPk(req.params.id,{
+  User.findOne({
+    where: {
+      id: req.params.id
+    },
     attributes: [
       'username',
       'email',

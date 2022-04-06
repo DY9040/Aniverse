@@ -15,12 +15,12 @@ router.get('/', (req, res) => {
         order: [['id', 'ASC',]],//doesnt work?
         include: {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username','persona','filename','id']
         }
       },
       {
         model: User,
-        attributes: ['username','persona','filename']
+        attributes: ['username','persona','filename','id']
       }
     ]
   })
@@ -44,12 +44,12 @@ router.get('/:id',withAuth, (req, res) => {
         order: [['id', 'ASC',]],//doesnt work?
         include: {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username','persona','filename','id']
         }
       },
       {
         model: User,
-        attributes: ['username','persona','filename']
+        attributes: ['username','persona','filename','id']
       }
     ]
   })

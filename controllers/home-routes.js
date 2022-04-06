@@ -16,12 +16,12 @@ router.get('/', (req, res) => {
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username','persona','filename']
+            attributes: ['username','persona','filename','id']
           }
         },
         {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username','persona','filename','id']
         }
       ]
     })
@@ -76,12 +76,12 @@ router.get('/', (req, res) => {
           attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['username','persona','filename']
+            attributes: ['username','persona','filename','user_id']
           }
         },
         {
           model: User,
-          attributes: ['username','persona','filename']
+          attributes: ['username','persona','filename','user_id']
         }
       ]
     })
