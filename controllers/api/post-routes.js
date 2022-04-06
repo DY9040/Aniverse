@@ -67,7 +67,6 @@ router.get('/:id',withAuth, (req, res) => {
 });
 
 router.post('/',withAuth, (req, res) => {
-  // expects {"title": "Taskmaster goes public!", "post_text": "rant about the post", "user_id": "1"}
   Post.create({
     title: req.body.title,
     post_text: req.body.post_text,
@@ -79,18 +78,6 @@ router.post('/',withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
-
-// PUT /api/posts/upvote
-//{"user_id":"1","post_id":"1"}
-// router.put('/upvote', (req, res) => {
-//   // custom static method created in models/Post.js
-//   Post.upvote(req.body, { Vote })
-//     .then(updatedPostData => res.json(updatedPostData))
-//     .catch(err => {
-//       console.log(err);
-//       res.status(400).json(err);
-//     });
-// });
 
 router.put('/:id', (req, res) => {
   Post.update(
@@ -116,8 +103,6 @@ router.put('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
-
 
 router.delete('/:id',withAuth, (req, res) => {
   Post.destroy({
