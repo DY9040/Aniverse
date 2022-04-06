@@ -1,7 +1,7 @@
 <section>
   {{!-- how do we get profile image here? --}}
   <h1>{{user.username}}'s Profile</h1>
-  <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+  <img class="post-profile-img" src="../images/{{user.filename}}" alt="{{user.username}} profile image">
   
 </section>
 
@@ -12,7 +12,7 @@
   <ol>
     {{#each posts as |post|}}
     <li>
-      {{> post-info post}}
+      {{> user-post post}}
       
     </li>
     {{/each}}
