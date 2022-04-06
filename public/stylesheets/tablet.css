@@ -1,0 +1,48 @@
+@media screen 
+and (max-width: 768px),
+/* TODO enhance landscape tablet query */
+(orientation: landscape) {
+  a, button {
+    font-size: medium;
+  }
+  
+  header {
+    padding: 4px;
+  }
+
+  h1 a {
+    font-size: xx-large;
+  }
+
+  nav a {
+    font-size: x-large;
+    margin: 0px 4px;
+  }
+
+  button#logout {
+    font-size: large;
+  }
+
+  #dashboard h2 {
+    font-size: larger;
+  }
+
+  .post-profile-img {
+    padding-left: 8px;
+    width: 66px;
+  }
+
+  div.meta {
+    font-size: inherit;
+    padding: 3px 6px;
+  }
+
+  li a {
+    font-size: inherit;
+  }
+
+  .edit-link {
+    bottom: 3px;
+    right: 6px;
+  }
+}

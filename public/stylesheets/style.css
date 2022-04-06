@@ -77,6 +77,21 @@
     margin: 0;
   }
 
+  section#dashboard {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #profile {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+  }
+
+  #new-post {
+    width: 60%;
+  }
+
   #dashboard h1 {
     font-weight: normal;
     text-shadow: 1px 1px 2px rgb(160 158 158);
@@ -155,6 +170,10 @@
     font-weight: initial;
   }
 
+  /* #new-post h2 {
+    color: #000000;
+  } */
+
   li {
     display: grid;
     grid-template-columns: 80%;
@@ -178,6 +197,7 @@
     margin: 0 0 6px;
     padding: 4px;
     justify-self: end;
+    font-weight: normal;
   }
   
   .meta {
