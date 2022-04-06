@@ -38,6 +38,10 @@
   nav a {
     padding: 0.55rem 0.55rem 0.55rem 0.55rem;
   }
+
+  h3 {
+    color:black;
+  }
   
   button {
     background-color: #000000;

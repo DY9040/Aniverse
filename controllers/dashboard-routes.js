@@ -18,6 +18,7 @@ router.get('/', withAuth, (req, res) => {
       'filename'
     ]
   }).then(dbUserData => {
+    console.log("db user data from the dashboard route",dbUserData)
     user = dbUserData.dataValues;
     console.log("this is the user data:",user);
   })

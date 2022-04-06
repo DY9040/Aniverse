@@ -2,78 +2,78 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    title: 'Donec posuere metus vitae ipsum.',
-    post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    title: 'Can you see me?',
+    
     user_id: 1
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'https://nasa.gov/donec.json',
+    title: 'What a wonderful day in the Aniverse',
+    
     user_id: 2
   },
   {
-    title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    post_url: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    title: 'My money is on Vegeta honestly. He is rutheless!',
+    
     user_id: 3
   },
   {
-    title: 'Nunc purus.',
-    post_url: 'http://desdev.cn/enim/blandit/mi.jpg',
+    title: 'Will you make it out alive?',
+    
     user_id: 4
   },
   {
-    title: 'Pellentesque eget nunc.',
-    post_url: 'http://google.ca/nam/nulla/integer.aspx',
+    title: 'HAHAHAHA SO FREAKING FUNNY!',
+   
     user_id: 1
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    post_url: 'https://stanford.edu/consequat.png',
+    title: 'Can you please turn around?',
+   
     user_id: 2
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_url: 'http://edublogs.org/non/ligula/pellentesque.js',
+    title: 'Im so happy the Aniverse is here.',
+  
     user_id: 3
   },
   {
-    title: 'Morbi non quam nec dui luctus rutrum.',
-    post_url: 'http://ucla.edu/consequat/nulla.html',
+    title: 'Some days I just dont know...',
+ 
     user_id: 4
   },
   {
-    title: 'Duis ac nibh.',
-    post_url: 'http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx',
+    title: 'Why do i need to wake up guys!?',
+
     user_id: 1
   },
   {
-    title: 'Curabitur at ipsum ac tellus semper interdum.',
-    post_url: 'https://reverbnation.com/ligula/sit.jpg',
+    title: 'Get to the chopper!',
+
     user_id: 1
   },
   {
-    title: 'In hac habitasse platea dictumst.',
-    post_url: 'http://china.com.cn/lectus/vestibulum.json',
+    title: 'Follow me if you want to live!',
+
     user_id: 2
   },
   {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_url: 'http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
+    title: 'Do you think Sailer Moon will marry me?',
+
     user_id: 3
   },
   {
-    title: 'Donec dapibus.',
-    post_url: 'https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml',
+    title: 'Who would win Allmight or Goku?',
+
     user_id: 4
   },
   {
-    title: 'Nulla tellus.',
-    post_url: 'https://lycos.com/natoque/penatibus/et.html',
+    title: 'What is the best food to eat in the Aniverse?',
+
     user_id: 3
   },
   {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_url: 'https://gmpg.org/lorem.jpg',
+    title: 'I dont ever want to leave the Aniverse',
+
     user_id: 3
   }
 ];

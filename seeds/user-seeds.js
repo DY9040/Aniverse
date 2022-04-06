@@ -3,30 +3,30 @@ const { User, Post } = require('../models');
 
 const userdata = [
   {
-    username: 'alesmonde0',
-    email: 'nwestnedge0@cbc.ca',
-    password: 'password123',
+    username: 'Ethan',
+    email: 'ethan@gmail.com',
+    password: 'password',
     persona: 'shoto',
-    filename: 'deku.png'
+    filename: 'shoto.png'
   },
   {
-    username: 'jwilloughway1',
-    email: 'rmebes1@sogou.com',
-    password: 'password123',
+    username: 'Jaime',
+    email: 'jaime@gmail.com',
+    password: 'password',
     persona: 'goku',
-    filename: 'shoto.png'
+    filename: 'goku.png'
   },
   {
-    username: 'iboddam2',
-    email: 'cstoneman2@last.fm',
-    password: 'password123',
+    username: 'Kiersten',
+    email: 'kiersten@gmail.com',
+    password: 'password',
     persona: 'sailer moon',
-    filename: 'shoto.png'
+    filename: 'SailorMoon.png'
   },
   {
-    username: 'dstanmer3',
-    email: 'ihellier3@goo.ne.jp',
-    password: 'password123',
+    username: 'David',
+    email: 'david@gmail.com',
+    password: 'password',
     persona: 'deku',
     filename: 'deku.png'
   }
