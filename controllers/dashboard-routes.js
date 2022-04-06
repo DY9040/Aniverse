@@ -21,10 +21,10 @@ router.get('/', withAuth, (req, res) => {
     user = dbUserData.dataValues;
     console.log("this is the user data:",user);
   })
-  // .catch(err => {
-  //   console.log(err);
-  //   res.status(500).json(err);
-  // });
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 
   Post.findAll({
     where: {
