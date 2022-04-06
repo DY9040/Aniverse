@@ -1,4 +1,6 @@
-@media screen and (max-width: 480px) {
+@media screen 
+and (max-width: 480px),
+(orientation: landscape) {
   a {
     font-size: medium;
   }
@@ -28,12 +30,4 @@
   #new-post {
     width: 60%;
   }
-};
-
-
-
-/* @media only screen and (orientation: landscape) {
-  body {
-      background-color: orange;
-  }
-} */
+}

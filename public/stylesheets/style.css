@@ -20,7 +20,7 @@
     color: #000000;
     font-weight: bold;
     transition: color .1s;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     text-shadow: 0.2rem 0.2rem 0.4rem rgb(160, 158, 158);
   }
   
