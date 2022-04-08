@@ -1,8 +1,11 @@
 <section>
-  {{!-- how do we get profile image here? --}}
-  <h1>{{user.username}}'s Profile</h1>
-  <img class="post-profile-img" src="../images/{{user.filename}}" alt="{{user.username}} profile image">
   
+  <h1>{{user.username}}'s Profile</h1>
+  <center>
+    <div class="profile-img">
+      <img class="user-img" src="../images/{{user.filename}}" alt="{{user.username}} profile image">
+    </div>
+  </center>
 </section>
 
 {{#if posts.length}}

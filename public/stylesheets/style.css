@@ -232,9 +232,17 @@
     background-image: linear-gradient(rgb(155, 26, 26), rgb(94, 4, 4), rgb(75, 11, 11));
     text-shadow: 0.1rem 0.1rem 0.2rem rgb(160, 158, 158);
   }
+  .profile-img{
+    align-content: center;
+  }
+  .user-img {
+    width:300px;
+    
+  }
 
   .post-profile-img {
     width:100px;
+    flex-wrap: wrap;
     display: flex;
   }
 
@@ -244,6 +252,16 @@
     Width: 100px;
     height: 100px;
     vertical-align: middle;
+  }
+  .user-stuff{
+    color:#f90000;
+    border:2px solid #f90000;
+    text-align: center;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .dashboard-header{
+    color:#000000;
   }
   .title {
     border-bottom: 6px solid white;

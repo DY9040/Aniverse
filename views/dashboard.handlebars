@@ -1,11 +1,13 @@
 <section>
   {{!-- how do we get profile image here? --}}
-  <div class="image-wrapper">
-    <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
-  </div>
-  <h1>{{user.persona}}</h1>
-  <h2>{{user.username}}'s Dashboard</h2>
-  <h2>Create New Post</h2>
+  <center>
+    <div class="profile-img">
+      <img class="user-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+    </div>
+  </center>
+  <h1 class="user-stuff">{{user.persona}} would you like to add a post and rant?</h1>
+  
+  <h2 class="dashboard-header">Create New Post</h2>
 
   <form class="new-post-form">
     <div>
@@ -27,7 +29,7 @@
   <ol>
     {{#each posts as |post|}}
     <li>
-      {{> post-info post}}
+      {{> dashboard-post post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
