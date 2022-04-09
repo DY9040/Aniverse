@@ -3,6 +3,7 @@ const withAuth = require('../../utils/auth');
 const { User, Post, Comment } = require('../../models');
 const nodemailer = require('nodemailer');
 
+
 // get all users
 router.get('/',withAuth, (req, res) => {
   console.log(req.session);
@@ -80,7 +81,7 @@ router.post('/', (req, res) => {
         secure: false,
         auth: {
           user: "aniverse123@outlook.com",
-          pass:"Password123456"
+          pass: process.env.PASSWORD
         },
       });
       
