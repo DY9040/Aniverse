@@ -2,344 +2,344 @@
     box-sizing: border-box;
   }
   
-  body, html {
-    background-image: url('../images/samurai_jack_scene_by_livingalivecreator_ddzz6vy-pre.jpeg');
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: fantasy;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  a {
-    color: black;
-    font-size: small;
-    text-decoration: none;
-    text-shadow: 1px 1px 2px rgb(160 158 158);
-    transition: color .1s;
-  }
+body, html {
+  background-image: url('../images/samurai_jack_scene_by_livingalivecreator_ddzz6vy-pre.jpeg');
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: fantasy;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-  h1 a, button#logout, a.post, h1#dashboard {
-    color: white;
-    text-shadow: 2px 2px 4px rgb(0 0 0);
-    font-size: large;
-    font-weight: normal;
-    margin: 3px 2px 0;
-  }
-  
-  h1 a, nav a, #logout {
-    padding: 4px 4px;
-  }
+a {
+  color: white;
+  font-size: small;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(0 0 0);
+  transition: color .1s;
+}
 
-  nav {
-    display: flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    margin: 2px;
-  }
+h1 a, button#logout, a.post, h1#dashboard {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(0 0 0);
+  font-size: large;
+  font-weight: normal;
+  margin: 3px 2px 0;
+}
 
-  li a {
-    font-weight: bold;
-  }
+h1 a, nav a, #logout {
+  padding: 4px 4px;
+}
 
-  h1 a:hover, button#logout:hover {
-    color: #804343;
-  }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2px;
+}
 
-  nav a:hover {
-    color: #3d1d1d;
-  }
+li a {
+  font-style: oblique;
+}
 
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    background-image: linear-gradient(rgb(75, 11, 11), rgb(94, 4, 4), rgb(155, 26, 26));
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 1px 0;
-    position: sticky;
-    top: 0;
-  }
-  
-  h1 {
-    margin: 0;
-  }
+h1 a:hover, button#logout:hover {
+  color: #804343;
+}
 
-  section#dashboard {
-    display: flex;
-    justify-content: space-between;
-  }
+nav a:hover {
+  color: #3d1d1d;
+}
 
-  #profile {
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-  }
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  #new-post {
-    width: 60%;
-  }
+header {
+  background-image: linear-gradient(rgb(75, 11, 11), rgb(94, 4, 4), rgb(155, 26, 26));
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
 
-  #dashboard h1 {
-    font-weight: normal;
-    text-shadow: 1px 1px 2px rgb(160 158 158);
-    margin-top: 2px;
-  }
-  
-  button {
-    background-color: #000000;
-    border-color: rgb(155, 26, 26);
-    color: white;
-    transition: background-color .1s;
-    cursor: pointer;
-    border-radius: 3px;
-    font-family: fantasy;
-  }
-  
-  button:hover {
-    background-color: #541c1c;
-  }
-  
-  .form-body {
-    font-family: fantasy;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    bottom: -14rem;
-  }
+h1 {
+  margin: 0;
+}
 
-  .login-form, .signup-form {
-    text-shadow: 0rem 0rem 0.1rem rgb(250, 249, 249);
-    color:  black;
-    font-weight: bolder;
-    font-size: 1.15rem;
-  }
-  
-  .post-list {
-    background-image: url('public/images/landscape-nature-water-fantasy-city-wallpaper-preview.jpeg');
-    margin: 0;
-    padding: 0;
-  }
-  
-  textarea, input {
-    padding: .5%;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-  }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
-  }
-  
-  textarea {
-    min-width: 40%;
-    min-height: 100px;
-  }
-  
-  form > div {
-    margin-bottom: 2%;
-  }
-  
-  form label {
-    display: block;
-  }
+header nav a {
+  color: black;
+  text-shadow: 1px 1px 2px rgb(160 158 158);
+}
 
-  main {
-    flex: 1;
-    padding: 2% 4%;
-  }
+#new-post {
+  width: 60%;
+}
 
-  h2 {
-    color: white;
-    text-shadow: 2px 2px 4px black;
-    font-size: inherit;
-    font-weight: initial;
-  }
+#dashboard h1 {
+  font-weight: normal;
+  text-shadow: 1px 1px 2px rgb(160 158 158);
+  margin-top: 2px;
+}
 
-  /* #new-post h2 {
-    color: #000000;
-  } */
+button {
+  background-color: #000000;
+  border-color: rgb(155, 26, 26);
+  color: white;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: fantasy;
+}
 
-  li {
-    display: grid;
-    grid-template-columns: 80%;
-    border-bottom: 2px solid rgb(255 255 255 / 66%);
-    margin: 14px 0;
-  }
+button:hover {
+  background-color: #3d1d1d;
+}
 
-  .title {
-    display: grid;
-    grid-template-columns: 46px;
-  }
+.form-body {
+  font-family: fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: -14rem;
+}
 
-  h3 {
-    background: rgb(84 28 28 / 66%);
-    color: white;
-    text-shadow: 2px 2px 2px rgb(0 0 0);
-    grid-column-start: 2;
-    grid-row-start: 1;
-    width: 100%;
-    height: max-content;
-    margin: 0 0 6px;
-    padding: 4px;
-    justify-self: end;
-    font-weight: normal;
-  }
-  
-  .meta {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    background-color: rgb(94 47 47 / 48%);
-    padding: 2px;
-  }
+.login-form, .signup-form {
+  text-shadow: 0rem 0rem 0.1rem rgb(250, 249, 249);
+  color:  black;
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
 
-  .btn-no-style {
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: color .1s;
-  }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: rgb(160, 158, 158);
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-  
-  .post {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-  }
-  
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
-  
-  .edit-link {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    justify-self: end;
-    align-self: end;
-    position: relative;
-    bottom: 3px;
-    right: 3px;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
-  .comment-form {
-    margin-bottom: 5%;
-  }
-  
-  .comment {
-    padding: 1%;
-    margin-bottom: 1%;
-  }
-  
-  .comment:nth-child(odd) {
-    background-color: #fff5eb;
-  }
-  
-  .comment .meta {
-    font-size: 90%;
-    margin-bottom: .5%;
-    opacity: .6;
-  }
+.post-list {
+  background-image: url('public/images/landscape-nature-water-fantasy-city-wallpaper-preview.jpeg');
+  margin: 0;
+  padding: 0;
+}
 
-  ol {
-    list-style-type: none;
-    padding: 0 20px;
-  }
+textarea, input {
+  padding: .5%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 
-  .your-posts, .new-post-form {
-    list-style-type: none;
-    /* color: black; */
-    font-size: larger;
-    text-shadow: 0.1rem 0.1rem 0.2rem rgb(155 26 26 / 48%);
-  }
-  
-  .new-post-form input {
-    width: 100%;
-  }
-  
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
-  
-  footer {
-    color: black;
-    border-top: 1px solid black;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-size: 150%;
-    background-image: linear-gradient(rgb(155, 26, 26), rgb(94, 4, 4), rgb(75, 11, 11));
-    text-shadow: 0.1rem 0.1rem 0.2rem rgb(160, 158, 158);
-  }
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
 
-  .post .post-profile-img {
-    width: 40px;
-    padding: 0;
-  }
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
 
-  .post-profile-img {
-    /* display: flex; */
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 48px;
-    padding-left: 4px;
-  }
+form > div {
+  margin-bottom: 2%;
+}
 
-  .post .image-wrapper {
-    Width: 40px;
-    height: 40px;
-    margin: 0 0 11px 2px;
-  }
+form label {
+  display: block;
+}
 
-  .image-wrapper {
-    overflow: hidden;
-    border-radius: 50%;
-    Width: 60px;
-    height: 60px;
-    vertical-align: middle;
-    display: inline;
-    background: radial-gradient(ellipse at right, transparent 46%, #804343 78%), radial-gradient(circle at top right, transparent 64%, #541c1c 126%);
-    padding: 2px;
-    border: double #3d1d1d;
-    border-right-width: thin;
-    border-top-width: thin;
-  }
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: inherit;
+  font-weight: initial;
+}
+
+/* #new-post h2 {
+  color: #000000;
+} */
+
+
+.post .post-profile-img {
+  width: 40px;
+  padding: 0;
+}
+
+.post-profile-img {
+  /* display: flex; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 48px;
+  padding-left: 4px;
+}
+
+.post .image-wrapper {
+  Width: 40px;
+  height: 40px;
+  margin: 0 0 11px 2px;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  border-radius: 50%;
+  Width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  display: inline;
+  background: radial-gradient(ellipse at right, transparent 46%, #804343 78%), radial-gradient(circle at top right, transparent 64%, #541c1c 126%);
+  padding: 2px;
+  border: double #3d1d1d;
+  border-right-width: thin;
+  border-top-width: thin;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.your-posts, .new-post-form {
+  /* color: black; */
+  background-color: linear-gradient(transparent, rgba(212, 106, 106, 0.42), transparent);
+  font-size: larger;
+  text-shadow: 1px 1px 2px white, 2px 2px 4px #541c1c;
+}
+
+.your-posts a:hover {
+  color: black;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px #541c1c;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 80%;
+  border-bottom: 2px solid rgb(255 255 255 / 66%);
+  margin: 14px 0;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: 46px;
+}
+
+h3 {
+  background: rgb(84 28 28 / 66%);
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0 0 0);
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 100%;
+  height: max-content;
+  margin: 0 0 6px;
+  padding: 4px;
+  justify-self: end;
+  font-weight: normal;
+}
+
+.meta {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  background-color: rgb(94 47 47 / 48%);
+  padding: 2px;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color .1s;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: rgb(160, 158, 158);
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  justify-self: end;
+  align-self: end;
+  position: relative;
+  bottom: 3px;
+  right: 3px;
+}
+
+.upvote-btn {
+  background-color: #197d0f;
+  transition: background-color .1s;
+}
+
+.upvote-btn:hover {
+  background-color: #1f9c13;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+.new-post-form input {
+  width: 100%;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  color: black;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 9px 12px 12px;
+  font-size: 150%;
+  background-image: linear-gradient(rgb(155, 26, 26), rgb(94, 4, 4), rgb(75, 11, 11));
+  text-shadow: 1px 1px 4px rgb(160 158 158);
+}

@@ -1,12 +1,14 @@
 @media screen 
 and (max-width: 480px),
-(orientation: landscape) {
+(max-height: 480px) and (orientation: landscape) {
   a {
     font-size: medium;
   }
 
   button#logout {
     font-size: larger;
+    position: relative;
+    bottom: 1px;
   }
 
   body, html {
@@ -16,6 +18,18 @@ and (max-width: 480px),
   main a {
     font-size: x-small;
   }
+
+  #sidebar button {
+    display: none;
+  }
+
+  /* button#profile-btn {
+    display: none;
+  }
+
+  button#new-rant-btn {
+    display: none;
+  } */
 
   section#dashboard {
     display: flex;

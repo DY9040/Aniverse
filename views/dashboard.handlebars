@@ -1,3 +1,14 @@
+<div id="sidebar">
+  <button id="sidebar-btn">
+    <a href="#dashboard">☰</a>
+  </button>
+  <button id="profile-btn">
+    <a href="#wrapper">⌂</a>
+  </button>
+  <button id="new-rant-btn">
+    <p>+</p>
+  </button>
+</div>
 <section id="dashboard">
   <div id="profile">
     <h2>{{user.username}}'s Dashboard</h2>
@@ -25,7 +36,7 @@
 
 {{#if posts.length}}
 <section class="your-posts">
-  <h2>Your Posts</h2>
+  <h2 id="posts-header">Your Posts</h2>
   
   <ol>
     {{#each posts as |post|}}
@@ -39,3 +50,4 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/sidebar.js"></script>

@@ -1,13 +1,14 @@
-@media screen 
-and (max-width: 768px),
+@media screen
+and (max-width: 768px) and (orientation: portrait),
 /* TODO enhance landscape tablet query */
-(orientation: landscape) {
+(max-height: 768px) and (orientation: landscape) {
   a, button {
     font-size: medium;
+    color: white;
   }
   
   header {
-    padding: 4px;
+    padding: 4px 4px 5px;
   }
 
   h1 a {
@@ -23,6 +24,11 @@ and (max-width: 768px),
     font-size: large;
   }
 
+  /* section#dashboard {
+    display: flex;
+    justify-content: space-between;
+  } */
+
   #dashboard h2 {
     font-size: larger;
   }
@@ -34,15 +40,15 @@ and (max-width: 768px),
 
   div.meta {
     font-size: inherit;
-    padding: 3px 6px;
+    padding: 1px 6px 3px;
   }
 
-  li a {
+  /* li a {
     font-size: inherit;
-  }
+  } */
 
   .edit-link {
-    bottom: 3px;
-    right: 6px;
+    bottom: 4px;
+    right: 8px;
   }
 }
