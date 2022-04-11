@@ -23,3 +23,11 @@ async function editFormHandler(event) {
 }
 
 document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+
+const postEl = document.querySelector('.post .title');
+
+if (window.location.pathname.includes('/edit/')) {
+  postEl.classList.add('edit-page');
+} else {
+  postEl.classList.remove('edit-page');
+}

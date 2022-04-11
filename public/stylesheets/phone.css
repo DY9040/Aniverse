@@ -58,6 +58,19 @@ and (max-width: 480px),
   .edit-link {
     right: 6px;
   }
+
+  .comment-form {
+    width: 84%;
+  }
+
+  #comment-input {
+    margin-bottom: 12px;
+  }
+
+  .comment-form button {
+    padding: 1px 3px 2px;
+    font-size: larger;
+  }
 }
 
 @media screen 
@@ -65,5 +78,9 @@ and (max-height: 480px)
 and (orientation: landscape) {
   h3 {
     background: radial-gradient(circle at left, transparent 4%, rgb(84 28 28 / 68%) 5%, rgb(94 47 47 / 66%) 96%);
+  }
+
+  .comment-form {
+    width: 66%;
   }
 }

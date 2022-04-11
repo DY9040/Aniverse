@@ -52,7 +52,15 @@ and (min-width: 480px) and (max-width: 768px) and (orientation: portrait),
 
   div.meta {
     font-size: inherit;
-    padding: 1px 6px 3px;
+    padding: 2px 6px 3px;
+  }
+
+  .meta {
+    padding: 2px 4px 2px;
+  }
+
+  .comment-form {
+    width: 60%;
   }
 
   .edit-link {

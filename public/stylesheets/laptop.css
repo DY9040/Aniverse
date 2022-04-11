@@ -1,6 +1,13 @@
 @media screen
 and (min-height: 480px)
 and (min-width: 768px) {
+  main {
+    grid-template-columns: 50%;
+    grid-column-gap: 10%;
+    grid-template-rows: max-content;
+    grid-row-gap: 5%;
+  }
+
   #sidebar button {
     align-items: center;
     justify-content: center;
@@ -24,7 +31,7 @@ and (min-width: 768px) {
     font-size: xx-large;
   }
 
-  .sidebar-btn-show {
+  .first-btn-show {
     display: flex;
     position: fixed;
     left: -2px;
@@ -32,7 +39,7 @@ and (min-width: 768px) {
     z-index: 1;
   }
 
-  .new-rant-btn-show {
+  .second-btn-show {
     display: flex;
     position: fixed;
     left: -2px;
@@ -62,11 +69,21 @@ and (min-width: 768px) {
     background: radial-gradient(circle at left, transparent 5%, rgb(84 28 28 / 68%) 7%, rgb(94 47 47 / 66%) 96%);
     padding: 4px 0 5px 70px;
   }
+
+  form.comment-form {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+  }
 }
 
 @media screen
 and (min-width: 768px)
 and (orientation: portrait) {
+  main {
+    display: initial;
+  }
+
   .dashboard-show {
     justify-content: space-around;
   }
@@ -74,5 +91,11 @@ and (orientation: portrait) {
   h3 {
     padding: 5px 0 6px 71px;
     background: radial-gradient(circle at left, transparent 7%, rgb(84 28 28 / 68%) 9%, rgb(94 47 47 / 66%) 96%);
+  }
+
+  form.comment-form {
+    margin: 22px auto 12px;
+    display: flex;
+    width: 84%;
   }
 }

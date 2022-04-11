@@ -53,10 +53,6 @@ and (min-width: 1024px) {
     padding: 0;
   }
 
-  .meta {
-    padding: 4px;
-  }
-
   .edit-link {
     bottom: 6px;
     right: 9px;
