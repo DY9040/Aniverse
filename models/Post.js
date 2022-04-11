@@ -3,24 +3,24 @@ const sequelize = require('../config/connection');
 
 // create our Post model
 class Post extends Model {
-  static upvote(body, models) {
-    return models.Vote.create({
-      user_id: body.user_id,
-      post_id: body.post_id
-    }).then(() => {
-      return Post.findOne({
-        where: {
-          id: body.post_id
-        },
-        attributes: [
-          'id',
-          'post_text',
-          'title',
-          'created_at'
-        ]
-      });
-    });
-  }
+  // static upvote(body, models) {
+  //   return models.Vote.create({
+  //     user_id: body.user_id,
+  //     post_id: body.post_id
+  //   }).then(() => {
+  //     return Post.findOne({
+  //       where: {
+  //         id: body.post_id
+  //       },
+  //       attributes: [
+  //         'id',
+  //         'post_text',
+  //         'title',
+  //         'created_at'
+  //       ]
+  //     });
+  //   // });
+  // }
 }
 
 // create fields/columns for Post model
