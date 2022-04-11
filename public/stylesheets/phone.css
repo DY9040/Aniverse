@@ -1,0 +1,69 @@
+@media screen 
+and (max-width: 480px),
+(max-height: 480px) and (orientation: landscape) {
+  header h1 {
+    margin-bottom: 3px;
+  }
+  
+  a {
+    font-size: medium;
+  }
+  
+  button#logout {
+    font-size: larger;
+    position: relative;
+    bottom: 1px;
+  }
+  
+  body, html {
+    font-size: x-small;
+  }
+  
+  main a {
+    font-size: x-small;
+  }
+  
+  #sidebar button {
+    display: none;
+  }
+  
+  section#dashboard {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #profile {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+  }
+  
+  #new-post {
+    padding-left: 4px;
+    width: 54%;
+  }
+  
+  h2 {
+    font-size: small;
+  }
+  
+  ol {
+    padding: 0 10px;
+  }
+  
+  label {
+    padding: 4px 2px;
+  }
+  
+  .edit-link {
+    right: 6px;
+  }
+}
+
+@media screen 
+and (max-height: 480px)
+and (orientation: landscape) {
+  h3 {
+    background: radial-gradient(circle at left, transparent 4%, rgb(84 28 28 / 68%) 5%, rgb(94 47 47 / 66%) 96%);
+  }
+}

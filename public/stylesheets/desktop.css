@@ -1,0 +1,65 @@
+@media screen
+and (min-height: 769px)
+and (min-width: 1024px) {
+  header {
+    padding: 4px 4px 5px;
+  }
+
+  header h1 a {
+    font-size: inherit;
+  }
+
+  header a {
+    font-size: x-large;
+  }
+  
+  a {
+    font-size: initial;
+  }
+
+  button.btn {
+    font-size: inherit;
+  }
+
+  .post-profile-img {
+    width: 74px;
+  }
+
+  h2 {
+    font-size: x-large;
+  }
+
+  h2#posts-header {
+    font-size: inherit;
+  }
+
+  li {
+    margin: 22px;
+  }
+
+  h3 {
+    background: radial-gradient(circle at left, transparent 4%, rgb(84 28 28 / 68%) 5%, rgb(94 47 47 / 66%) 96%);
+    padding: 4px 0 5px 72px;
+  }
+
+  .post .image-wrapper {
+    width: 60px;
+    height: 60px;
+    bottom: 6px;
+  }
+
+  .post .post-profile-img {
+    width: 60px;
+    padding: 0;
+  }
+
+  .meta {
+    padding: 4px;
+  }
+
+  .edit-link {
+    bottom: 6px;
+    right: 9px;
+  }
+
+}

@@ -1,30 +1,42 @@
-<section>
-  {{!-- how do we get profile image here? --}}
-  <center>
-    <div class="profile-img">
-      <img class="user-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
+<div id="sidebar">
+  <button id="sidebar-btn">
+    <a href="#dashboard">☰</a>
+  </button>
+  <button id="profile-btn">
+    <a href="#wrapper">⌂</a>
+  </button>
+  <button id="new-rant-btn">
+    <p>+</p>
+  </button>
+</div>
+<section id="dashboard">
+  <div id="profile">
+    <h2>{{user.username}}'s Dashboard</h2>
+    <div class="image-wrapper">
+      <img class="post-profile-img" src="images/{{user.filename}}" alt="{{user.username}} profile image">
     </div>
-  </center>
-  <h1 class="user-stuff">{{user.persona}} would you like to add a post and rant?</h1>
-  
-  <h2 class="dashboard-header">Create New Post</h2>
+    <h1>{{user.persona}}</h1>
+  </div>
+  <div id="new-post">
+    <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-text">Rant</label>
-      <input type="text" name="post-text" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+    <form class="new-post-form">
+      <div>
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-text">Rant</label>
+        <input type="text" name="post-text" />
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
 </section>
 
 {{#if posts.length}}
 <section class="your-posts">
-  <h2>Your Posts</h2>
+  <h2 id="posts-header">Your Posts</h2>
   
   <ol>
     {{#each posts as |post|}}
@@ -38,3 +50,4 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/sidebar.js"></script>

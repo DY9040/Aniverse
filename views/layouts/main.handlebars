@@ -6,25 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniverse</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/phone.css">
+  <link rel="stylesheet" href="/stylesheets/tablet.css">
+  <link rel="stylesheet" href="/stylesheets/laptop.css">
+  <link rel="stylesheet" href="/stylesheets/desktop.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1850848335773870"
      crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="wrapper">
-  <header>
-    <h1>
-      <a href="/">Aniverse</a>
-    </h1>
-<nav>
-  {{#if loggedIn}}
-  <a href="/dashboard">Profile Page</a>
-  <button  id="logout" class="btn-no-style logout">Logout</button>
-  {{else}}
-  <a  href="/login">login</a>
-  {{/if}}
-</nav>
-  </header>
+    <header>
+      <h1>
+        <a href="/">Aniverse</a>
+      </h1>
+      <nav>
+        {{#if loggedIn}}
+          <a href="/dashboard">Profile Page</a>
+          <button id="logout" class="btn-no-style">logout</button>
+        {{else}}
+          <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
     <main>
       {{{ body }}}
     </main>
@@ -34,7 +38,7 @@
   </div>
 
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
+    <script src="/javascript/logout.js"></script>
   {{/if}}
 
 </body>

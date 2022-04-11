@@ -1,0 +1,78 @@
+@media screen
+and (min-height: 480px)
+and (min-width: 768px) {
+  #sidebar button {
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+  }
+
+  button#sidebar-btn a {
+    position: relative;
+    bottom: 1px;
+  }
+
+  button#profile-btn a {
+    position: relative;
+    bottom: 4px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  button#new-rant-btn p {
+    font-size: xx-large;
+  }
+
+  .sidebar-btn-show {
+    display: flex;
+    position: fixed;
+    left: -2px;
+    top: 49px;
+    z-index: 1;
+  }
+
+  .new-rant-btn-show {
+    display: flex;
+    position: fixed;
+    left: -2px;
+    top: 78px;
+  }
+
+  .dashboard-show {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-show {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+  }
+
+  .new-post-show {
+    display: initial;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  h3 {
+    background: radial-gradient(circle at left, transparent 5%, rgb(84 28 28 / 68%) 7%, rgb(94 47 47 / 66%) 96%);
+    padding: 4px 0 5px 70px;
+  }
+}
+
+@media screen
+and (min-width: 768px)
+and (orientation: portrait) {
+  .dashboard-show {
+    justify-content: space-around;
+  }
+
+  h3 {
+    padding: 5px 0 6px 71px;
+    background: radial-gradient(circle at left, transparent 7%, rgb(84 28 28 / 68%) 9%, rgb(94 47 47 / 66%) 96%);
+  }
+}

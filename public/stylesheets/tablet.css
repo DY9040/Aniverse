@@ -1,0 +1,62 @@
+@media screen
+and (min-width: 480px) and (max-width: 768px) and (orientation: portrait),
+/* TODO enhance landscape tablet query */
+(min-height: 480px) and (max-height: 768px) and (orientation: landscape) {
+  a, button {
+    font-size: medium;
+    color: white;
+  }
+  
+  header {
+    padding: 4px 4px 5px;
+  }
+
+  h1 a {
+    font-size: xx-large;
+  }
+
+  nav a {
+    font-size: x-large;
+    margin: 0px 4px;
+  }
+
+  button#logout {
+    font-size: large;
+  }
+
+  #dashboard h2 {
+    font-size: larger;
+  }
+
+  li {
+    margin: 22px 0;
+    margin-bottom: 26px;
+  }
+
+  .post-profile-img {
+    padding-left: 8px;
+    width: 66px;
+  }
+
+
+  .post .image-wrapper {
+    width: 60px;
+    height: 60px;
+    bottom: 5px;
+  }
+
+  .post .post-profile-img {
+    width: 60px;
+    padding: 0;
+  }
+
+  div.meta {
+    font-size: inherit;
+    padding: 1px 6px 3px;
+  }
+
+  .edit-link {
+    bottom: 4px;
+    right: 8px;
+  }
+}
