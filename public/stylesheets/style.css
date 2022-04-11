@@ -12,6 +12,16 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -79,6 +89,7 @@ h1 {
 header nav a {
   color: black;
   text-shadow: 1px 1px 2px rgb(160 158 158);
+  padding-right: 6px;
 }
 
 #new-post {
@@ -88,7 +99,7 @@ header nav a {
 #dashboard h1 {
   font-weight: normal;
   text-shadow: 1px 1px 2px rgb(160 158 158);
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 button {
@@ -153,7 +164,7 @@ form label {
 
 main {
   flex: 1;
-  padding: 2% 4%;
+  padding: 1% 4% 2%;
 }
 
 h2 {
@@ -163,22 +174,15 @@ h2 {
   font-weight: initial;
 }
 
-/* #new-post h2 {
-  color: #000000;
-} */
-
-
 .post .post-profile-img {
   width: 40px;
   padding: 0;
 }
 
 .post-profile-img {
-  /* display: flex; */
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
   width: 48px;
   padding-left: 4px;
 }
@@ -186,7 +190,9 @@ h2 {
 .post .image-wrapper {
   Width: 40px;
   height: 40px;
-  margin: 0 0 11px 2px;
+  margin: 0 0 10px 2px;
+  position: relative;
+  bottom: 2px;
 }
 
 .image-wrapper {
@@ -209,7 +215,6 @@ ol {
 }
 
 .your-posts, .new-post-form {
-  /* color: black; */
   background-color: linear-gradient(transparent, rgba(212, 106, 106, 0.42), transparent);
   font-size: larger;
   text-shadow: 1px 1px 2px white, 2px 2px 4px #541c1c;
@@ -225,34 +230,37 @@ li {
   display: grid;
   grid-template-columns: 80%;
   border-bottom: 2px solid rgb(255 255 255 / 66%);
-  margin: 14px 0;
+  margin-bottom: 22px;
 }
 
 .title {
   display: grid;
   grid-template-columns: 46px;
+  grid-template-rows: 0px;
 }
 
 h3 {
-  background: rgb(84 28 28 / 66%);
-  color: white;
-  text-shadow: 2px 2px 2px rgb(0 0 0);
-  grid-column-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 1;
   width: 100%;
   height: max-content;
-  margin: 0 0 6px;
-  padding: 4px;
+  margin: 4px 0 6px;
+  padding: 4px 0 5px 49px;
   justify-self: end;
+  background: radial-gradient(circle at left, transparent 9%, rgb(84 28 28 / 68%) 12%, rgb(94 47 47 / 66%) 96%);
+  color: white;
+  text-shadow: 2px 2px 2px rgb(0 0 0);
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .meta {
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 2;
+  grid-row-start: 3;
   background-color: rgb(94 47 47 / 48%);
-  padding: 2px;
+  padding: 1px 3px 2px;
 }
 
 .btn-no-style {
