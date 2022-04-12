@@ -3,9 +3,8 @@ const withAuth = require('../../utils/auth');
 const { User, Post, Comment } = require('../../models');
 const nodemailer = require('nodemailer');
 
-
 // get all users
-router.get('/',withAuth, (req, res) => {
+router.get('/', withAuth, (req, res) => {
   console.log(req.session);
   User.findAll({
     attributes: { exclude: ['password'] }
@@ -17,7 +16,7 @@ router.get('/',withAuth, (req, res) => {
     });
 });
 
-router.get('/:id',withAuth, (req, res) => {
+router.get('/:id', withAuth, (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
     where: {
